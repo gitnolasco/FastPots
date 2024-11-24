@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
+    <!-- Campo E-mail -->
+    <ion-item>
+      <ion-label position="stacked">E-mail</ion-label>
+      <ion-input 
+        type="email" 
+        formControlName="email" 
+        placeholder="Digite seu e-mail">
+      </ion-input>
+    </ion-item>
+    <ion-text color="danger" *ngIf="cadastroForm.get('email')?.invalid && (cadastroForm.get('email')?.dirty || cadastroForm.get('email')?.touched)">
+      <p *ngIf="cadastroForm.get('email')?.errors?.['required']">E-mail é obrigatório.</p>
+      <p *ngIf="cadastroForm.get('email')?.errors?.['email']">Formato de e-mail inválido.</p>
+    </ion-text>
+
+    <!-- Campo Senha -->
+    <ion-item>
+      <ion-label position="stacked">Senha</ion-label>
+      <ion-input 
+        type="password" 
+        formControlName="senha" 
+        placeholder="Digite sua senha">
+      </ion-input>
+    </ion-item>
+    <ion-text color="danger" *ngIf="cadastroForm.get('senha')?.invalid && (cadastroForm.get('senha')?.dirty || cadastroForm.get('senha')?.touched)">
+      <p *ngIf="cadastroForm.get('senha')?.errors?.['required']">Senha é obrigatória.</p>
+      <p *ngIf="cadastroForm.get('senha')?.errors?.['minlength']">A senha deve ter pelo menos 6 caracteres.</p>
+    </ion-text>
+
+    <!-- Botão de Cadastro -->
+    <ion-button 
+      expand="block" 
+      type="submit" 
+      [disabled]="cadastroForm.invalid">
+      Cadastrar
+    </ion-button>
+  </form>
+</ion-content>
