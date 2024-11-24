@@ -1,0 +1,7 @@
+{
+  "name": "FastPots",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
