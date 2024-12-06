@@ -1,0 +1,29 @@
+ion-header {
+    background: #2d2d2d; /* Fundo escuro para o cabeçalho */
+  }
+  
+  ion-toolbar {
+    background: #333; /* Cor de fundo da barra */
+    border-radius: 0px; /* Sem borda arredondada */
+    padding: 10px 16px;
+  }
+  
+  ion-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f8a06e; /* Cor do título (laranja suave) */
+  }
+  
+  ion-back-button {
+    color: #f8a06e; /* Cor do botão de voltar (laranja suave) */
+    padding-left: 8px;
+    width: 60px;
+  }
+  
+.foto-nolasco {
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}

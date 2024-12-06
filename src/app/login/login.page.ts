@@ -31,7 +31,7 @@ export class LoginPage implements OnInit {
     this.authService.loginNoFirebase(this.email, this.senha)
       .then((res) => {
         console.log("res = ", res);
-        this.router.navigate(["/home"]);
+        this.router.navigate(["/conteudo"]);
       })
       .catch((error) => {
         console.log("error = ", error);

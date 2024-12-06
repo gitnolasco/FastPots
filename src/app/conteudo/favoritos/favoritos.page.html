@@ -1,0 +1,14 @@
+<ion-content>
+  <div class="header-container"> 
+    <h2>Seus Favoritos</h2>
+  </div>
+
+  <div class="card-container">
+    <ion-card *ngFor="let receita of receitas" button="">
+      <img [src]="receita.foto" />
+      <ion-card-header>
+        <ion-card-title>{{ receita.nome }}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </div>
+</ion-content>

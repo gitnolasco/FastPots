@@ -1,27 +1,53 @@
-#container {
+content{
+  font-family: sans-serif;
+}
+.custom-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribui os elementos verticalmente */
+  align-items: center; /* Alinha ao centro horizontal */
   text-align: center;
+}
 
-  position: absolute;
+.grid-container {
+  flex: 1; /* Permite que o grid ocupe o espaço disponível */
+}
+
+.welcome-text {
+  color: #f8a06e;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 10px; /* Pequeno espaçamento superior */
+}
+
+.logo-principal {
+  max-width: 100%; /* Redimensiona a imagem para a largura da tela */
+  max-height: 50vh; /* Ajusta para não ocupar mais de 50% da altura visível */
+  object-fit: contain; /* Evita distorções na imagem */
+  margin: auto;
+  margin-top: 70px; /* Ajuste para descer a imagem */
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 20px; /* Espaçamento inferior */
   left: 0;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos horizontalmente */
+  align-items: center; /* Centraliza os elementos verticalmente */
+  padding: 0 20px; /* Espaçamento lateral */
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
+.sobre-button {
   font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+  color: #00adee; /* Azul claro */
+  --color-focused: #00adee; /* Cor quando o botão está focado */
+  --padding-start: 0; /* Remove padding extra à esquerda */
+  --padding-end: 0; /* Remove padding extra à direita */
+  text-transform: none; /* Mantém o texto normal (não em maiúsculas) */
 }
 
-#container a {
-  text-decoration: none;
-}

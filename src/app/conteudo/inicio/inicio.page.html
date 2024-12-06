@@ -1,0 +1,19 @@
+<ion-content>
+  <div class="header-container"> 
+    <h2>Olá, Seja Bem-vindo!</h2>
+    <p>Praticidade Com Sabor</p>
+  </div>
+  <div class="search-container">
+    <ion-searchbar placeholder="Pesquise seu Destino"></ion-searchbar>
+  </div>
+
+  <div class="card-container">
+    <h2>Destaques</h2>
+    <ion-card *ngFor="let receita of receitas" button="">
+      <img [src]="receita.foto" />
+      <ion-card-header>
+        <ion-card-title>{{ receita.nome }}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </div>
+</ion-content>

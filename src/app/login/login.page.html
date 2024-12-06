@@ -1,11 +1,6 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="success">
-    <ion-title class="ion-text-center">Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <form (ngSubmit)="loginUsuario()">
+    <ion-back-button default-href="/home"></ion-back-button>
     <ion-card color="light" class="ion-text-center">
       <ion-card-header>
         <ion-card-title>FAZER LOGIN</ion-card-title>
@@ -15,14 +10,31 @@
 
     <br />
 
+    <ion-img
+      src="assets/Fast_logo.png"
+      alt="Logo Principal"
+      class="logo-principal"
+    >
+    </ion-img>
+
     <ion-item line="full">
       <ion-label position="floating">E-mail</ion-label>
-      <ion-input type="text" name="email" [(ngModel)]="email" required></ion-input>
+      <ion-input
+        type="text"
+        name="email"
+        [(ngModel)]="email"
+        required
+      ></ion-input>
     </ion-item>
 
     <ion-item line="full">
       <ion-label position="floating">Senha</ion-label>
-      <ion-input type="password" name="senha" [(ngModel)]="senha" required></ion-input>
+      <ion-input
+        type="password"
+        name="senha"
+        [(ngModel)]="senha"
+        required
+      ></ion-input>
     </ion-item>
 
     <div class="ion-text-center">
@@ -30,10 +42,10 @@
         Login
         <ion-icon slot="end" name="enter-outline"></ion-icon>
       </ion-button>
-      
+
       <ion-button color="warning" type="button" (click)="cadastroPage()">
-        Fazer Cadastro
-        <ion-icon slot="end" name="saver-outline"></ion-icon>
+        Cadastro 
+        
       </ion-button>
     </div>
   </form>

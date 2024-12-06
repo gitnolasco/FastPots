@@ -1,0 +1,95 @@
+ion-back-button {
+    color: #f8a06e; /* Cor do botão de voltar (laranja suave) */
+    padding-left: 8px;
+    width: 60px;
+  }
+  ion-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+    }
+    
+    form {
+      width: 100%;
+      padding: 16px; /* Adicionando espaçamento dentro do formulário */
+      border-radius: 10px;
+    }
+    
+    ion-card {
+      margin-bottom: 16px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    
+    ion-card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #f8a06e; /* Cor alaranjada */
+    }
+    
+    ion-card-content {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    
+    .logo-principal {
+      width: 70%;
+      height: auto;
+      margin: 16px auto;
+      display: block;
+    }
+    
+    ion-item {
+      --background: transparent; /* Fundo transparente */
+      --border-color: transparent; /* Remover a borda preta */
+      --inner-padding-end: 0;
+      --padding-start: 0;
+      margin-bottom: 16px;
+    }
+    
+    ion-label {
+      font-size: 0.9rem;
+      color: #f8a06e; /* Cor alaranjada */
+    }
+    
+    ion-input {
+      font-size: 1rem;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #4444447e ;
+      color: #fff;
+    }
+    
+    ion-input:focus {
+      border-color: #f8a06e; /* Alaranjado ao focar */
+    }
+    
+    ion-button {
+      width: 100%;
+      margin-top: 8px;
+      --border-radius: 10px;
+      --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    ion-button[color="danger"] {
+      --background: #e63946;
+      --background-focused: #d62839;
+      --background-hover: #cc2936;
+    }
+    
+    ion-button[color="warning"] {
+      --background: #ffba08;
+      --background-focused: #faa307;
+      --background-hover: #f48c06;
+    }
+    
+    ion-item:hover ion-input {
+      border-color: #f8a06e; /* Bordas alaranjadas ao passar o mouse */
+    }
+    
+    ion-button:hover {
+      opacity: 0.9; /* Efeito de hover nos botões */
+    }
+    
