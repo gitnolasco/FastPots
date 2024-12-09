@@ -1,13 +1,17 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>pesquisar</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <div class="header-container"> 
+    <h2>Descubra Seus Pratos</h2>
+  </div>
+  <div class="search-container">
+    <ion-searchbar placeholder="Pesquise sua receita"></ion-searchbar>
+  </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">pesquisar</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="card-container">
+    <ion-card *ngFor="let receita of receitas" button="">
+      <img [src]="receita.foto" />
+      <ion-card-header>
+        <ion-card-title>{{ receita.nome }}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </div>
 </ion-content>

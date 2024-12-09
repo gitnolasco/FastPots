@@ -18,6 +18,7 @@ export class InicioPage {
     { foto: 'assets/lasanha.jpg', nome: 'Lasanha à bolonhesa' }
     // adicione mais receitas conforme necessário
   ];
+  
 
   constructor() { }
 
